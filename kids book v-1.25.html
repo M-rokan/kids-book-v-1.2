@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>first page</title>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+<style type="text/css">    
+    *,*:before,*:after{margin:0; padding:0;}
+    /*first loooding  start hear*/       
+    .Intudius-Animation-page{ 
+    opacity:0;animation-name:firstLoging;
+     animation-duration:2s; animation-delay:0s;
+    }
+    @keyframes firstLoging{
+    0%{opacity:1.0;}
+    85%{opacity:1.0;}
+    100%{opacity:0;}
+   }
+   
+        
+      
+    body{background:#998068;}
+    #first-hading{
+    padding-top:50px; text-align:center;
+    box-shadow:1px 10px 100px ;
+    color:#D8DCDE;
+        }
+    .moon{
+    position:absolute;
+    width:300px; height:300px;
+    border:1px solid black; border-radius:50%;
+    top:50%;  left:50%;
+    transform: translate(-50%,-50%);
+    background:#DDC7B2;
+    box-shadow:inset 15px 15px 10px #999;
+        }
+    .dog{
+    position: absolute; top:50%; left:51%;
+    transform: translate(-50%,-50%);
+    background: transparent url('spritesheet (1).png') 0 0 no-repeat;
+    width:302px; height:205px; margin:2em auto;
+    animation:run 1s steps(21)infinite;															
+    }
+    @keyframes run{
+    100%{
+     background-position:-6342px, 0;
+     }}
+    p.loading{
+    background:#D8DCDE;
+    border-radius:40px;
+    width:100%;  height:30px;
+    font-family:'monospace';
+    position:absolute;
+    left:0;  bottom:-50px;
+    color:#4c4c4c;
+    font-size:20px;
+    text-shadow:1px 1px 1px #737373;
+    text-align:center;
+    }
+    
+/*Laver page style start hear*/
+    
+    #Main-lavel{
+    text-align:center;
+    opacity:1;
+    animation-name:Mainlavel;
+    animation-duration:2s;
+    animation-delay:0s;
+    }
+    @keyframes Mainlavel{
+    0%{opacity:0;}
+    85%{opacity:0;}
+    100%{opacity:1;}
+    }
+    
+    
+    .lavel-content{margin-top:70px;}
+    .lavel-content a{
+    box-shadow:8px 8px 10px #B2B2B3;
+    border:1px solid black;
+    border-collapse:collapse;
+    text-decoration: none;
+    display: block;
+    border-radius:0 45px 45px 0;
+    height:40px;
+    margin:20px auto;
+    width:200px;
+    background:#734C20;
+    position:relative;
+    color:#fff; font-size:1.2rem;
+    }
+    .lavel-kids-hading{
+    background:#000;
+    color:#fff;
+    width:100%;
+    z-index:10;
+    text-shadow: 0 0 10px #40808b, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    .lavel-content a span{
+    position:absolute;
+    border:2px solid white;
+    width:50px;
+    height:100%;
+    border-radius:0 45px 45px 0;
+    position:absolute;
+    right:-10px;
+    background:#596763;
+    color:#fff;
+    font-size:1.5rem;
+    } 
+    a:focus:before{
+    background:linear-gradient(to right,red,green,blue);
+    /*filter:blur(7px) contrast(11);*/
+    filter:url('#wave');
+    }
+</style>
+</head>
+<body>
+    <!--2d Animation page start hear-->
+    <div class="Intudius-Animation-page" >
+        <div id="first-hading">
+        <h1>kids book</h1>
+        </div>
+        <div class="moon">
+        <p class="loading">&nbsp&nbsp LOODING &nbsp•••></p>
+        <div class="dog"></div>
+        </div>
+    </div>
+    
+    <!--2d Animation page end hear-->
+    
+    <div id="Main-lavel">
+        <h2 class="lavel-kids-hading" >Hi kids select your level.</h2>
+        <div class="lavel-content">
+        <a class="lavel-1" href="Lavel-1.html">Lavel-1 <span> > </span></a>
+        <a class="lavel-2" href="#">Lavel-2 <span> > </span></a>
+        <a class="lavel-3" href="#">Lavel-3 <span> > </span></a>
+        <a class="lavel-4" href="#">Lavel-4 <span> > </span></a>
+        <a class="lavel-5" href="#">Lavel-5 <span> > </span></a>
+        </div>
+    </div>
+</body>
+</html>
